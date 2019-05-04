@@ -35,6 +35,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0CE809F227DE1C20026EABF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0DBD7042263796A00283B69 /* Assets.xcassets */,
+				C0DBD7092263796A00283B69 /* Info.plist */,
+				C0DBD7062263796A00283B69 /* LaunchScreen.storyboard */,
+				C0DBD7012263796900283B69 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C0DBD6F12263796900283B69 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +67,7 @@
 			children = (
 				C0DBD6FD2263796900283B69 /* AppDelegate.swift */,
 				C0DBD6FF2263796900283B69 /* ViewController.swift */,
-				C0DBD7012263796900283B69 /* Main.storyboard */,
-				C0DBD7042263796A00283B69 /* Assets.xcassets */,
-				C0DBD7062263796A00283B69 /* LaunchScreen.storyboard */,
-				C0DBD7092263796A00283B69 /* Info.plist */,
+				C0CE809F227DE1C20026EABF /* Resources */,
 			);
 			path = ARKit2Playground;
 			sourceTree = "<group>";

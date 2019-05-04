@@ -25,11 +25,11 @@ class ViewController: UIViewController {
   
   func configurePlaneDetection() {
     self.configuration.worldAlignment = .camera
-    self.configuration.planeDetection = [.horizontal, .vertical]
+    self.configuration.planeDetection = .vertical
   }
   
   func defineSceneView() {
-    self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+    self.sceneView.debugOptions = [.showFeaturePoints, .showWorldOrigin]
     self.sceneView.delegate = self
     self.sceneView.session.run(self.configuration)
   }
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 
 extension ViewController: ARSCNViewDelegate {
   func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-    print("found somenthing 🤘🏼")
+    print("found something 🤘🏼")
     
     print(node)
     print(anchor)
